@@ -815,7 +815,7 @@ console.log("Running Bot Launcher!");
 
         bestTime = Math.max(nbSeconds, bestTime);
 
-        var displayText = 'Score: ' + ~~(R / 100) + " Current Time: " + nbSeconds + " seconds.";
+        var displayText = 'PUNTUACION: ' + ~~(R / 100) + " tiempo de juego: " + nbSeconds + " segundos.";
 
         0 != R && (null == ua && (ua = new va(24, "#FFFFFF")), ua.C(displayText), c = ua.L(), a = c.width, f.globalAlpha = .2, f.fillStyle = "#000000", f.fillRect(10, r - 10 - 24 - 10, a + 10, 34), f.globalAlpha = 1, f.drawImage(c, 15, r -
             10 - 24 - 5));
@@ -978,20 +978,20 @@ console.log("Running Bot Launcher!");
 
         var debugStrings = [];
         debugStrings.push("Current Bot: " + window.botList[botIndex][0]);
-        debugStrings.push("T - Bot: " + (!toggle ? "On" : "Off"));
-        debugStrings.push("R - Lines: " + (!toggleDraw ? "On" : "Off"));
-        debugStrings.push("Q - Follow Mouse: " + (toggleFollow ? "On" : "Off"));
-        debugStrings.push("S - Manual Cell: " + (selectedCell == 0 ? "None" : selectedCell) + " of " + getPlayer().length);
+        debugStrings.push("T - ROBOT: " + (!toggle ? "encendido" : "apagado"));
+        debugStrings.push("R - RAYAS: " + (!toggleDraw ? "encendido" : "apagado"));
+        debugStrings.push("Q - SEGUIR RATONON: " + (toggleFollow ? "encendido" : "apagado"));
+        debugStrings.push("S - CELULA MANUAL: " + (selectedCell == 0 ? "ninguno" : selectedCell) + " de " + getPlayer().length);
         debugStrings.push("");
-        debugStrings.push("Best Score: " + ~~(sessionScore / 100));
-        debugStrings.push("Best Time: " + bestTime + " seconds");
+        debugStrings.push("Mejor puntuación: " + ~~(sessionScore / 100));
+        debugStrings.push("RATO JUGANDO: " + bestTime + " seconds");
         debugStrings.push("");
         debugStrings.push(serverIP);
 
         if (getPlayer().length > 0) {
             var offsetX = -getMapStartX();
             var offsetY = -getMapStartY();
-            debugStrings.push("Location: " + Math.floor(getPlayer()[0].x + offsetX) + ", " + Math.floor(getPlayer()[0].y + offsetY));
+            debugStrings.push("Localización: " + Math.floor(getPlayer()[0].x + offsetX) + ", " + Math.floor(getPlayer()[0].y + offsetY));
         }
 
         var offsetValue = 20;
@@ -1080,7 +1080,7 @@ console.log("Running Bot Launcher!");
                     1;
                 a.fillStyle = "#FFFFFF";
                 c = null;
-                c = Z("leaderboard");
+                c = Z("Clasificación");
                 a.font = "30px Ubuntu";
                 a.fillText(c, 100 - a.measureText(c).width / 2, 40);
                 if (null == A)
@@ -1294,7 +1294,7 @@ console.log("Running Bot Launcher!");
                 dArc = [],
                 dText = [],
                 lines = [],
-                names = ["NotReallyABot"],
+                names = ["PELIGRO!!"],
                 originalName = names[Math.floor(Math.random() * names.length)],
                 sessionScore = 0,
                 serverIP = "",
@@ -2006,7 +2006,7 @@ console.log("Running Bot Launcher!");
                             }
                             a.closePath();
                             d = this.name.toLowerCase();
-                            !this.n && kb && ":teams" != P ? -1 != ob.indexOf(d) ? (U.hasOwnProperty(d) || (U[d] = new Image, (d == "notreallyabot" ? U[d].src = "http://i.imgur.com/q5FdCkx.png" : U[d].src = "skins/" +
+                            !this.n && kb && ":teams" != P ? -1 != ob.indexOf(d) ? (U.hasOwnProperty(d) || (U[d] = new Image, (d == "notreallyabot" ? U[d].src = "http://i.imgur.com/jXFGr1R.png" : U[d].src = "skins/" +
                                 d + ".png")), c = 0 != U[d].width && U[d].complete ? U[d] : null) : c = null : c = null;
                             c = (e = c) ? -1 != Hb.indexOf(d) : !1;
                             b || a.stroke();
